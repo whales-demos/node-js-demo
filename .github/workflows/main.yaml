@@ -1,0 +1,12 @@
+name: Docker Compose 
+run-name: Docker Compose 🐳
+on: [push]
+jobs:
+  Thest-The-Application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy Application & Database 
+        run: |
+          docker compose -f compose.yaml up -d 
+          
