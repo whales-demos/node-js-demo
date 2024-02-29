@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Deploy Application & Database 
+      - name: Start and Test the Compose Stack
         run: |
           #docker compose -f compose.yaml up -d
           docker compose run server npm run test
