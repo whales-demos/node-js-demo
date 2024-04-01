@@ -8,6 +8,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Start and Test the Compose Stack
         run: |
-          #docker compose -f compose.yaml up -d
           docker compose run server npm run test
 
